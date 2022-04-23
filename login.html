@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+       
+        .table {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #3d3d3d;
+            padding: 1px 10px 20px 10px;
+            box-shadow: 5px 10px 8px #888888;
+            border: 0.25px solid #BFBFBF;
+            border-radius: 16px;
+            display: inline-block;
+            align-items: center;
+            justify-content: space-between;
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            margin: 5% auto 15% auto;
+
+        }
+        table td{
+            color: #fff;
+        }
+        input[type=text]{
+            width: 100%;
+        }
+        #btn a{
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff1e62;;
+            border: 1pt solid #BFBFBF;
+            padding: 5px 18px;
+            display: inline-block;
+            margin: 1px 0;
+            border-radius: 15px;
+            
+        }
+        #btn a:hover{
+            background-color: #baff75;
+            text-decoration: none;
+            color: #000000;
+           
+        }
+        h4{
+            color: #fff;;
+            text-align: center;
+            margin-bottom: 0;
+            position: absolute;
+        }
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #ff1e62;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #baff75;
+  cursor: pointer;
+}
+        /* Add Zoom Animation */
+        .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+        }
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom 
+{
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+        </style>
+    </head>
+    <body>
+        <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
+        <div class="table" id="login">
+        <form>  
+            <table>
+                <h4>Login</h4>
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <tr><td>User id  <input type="text" placeholder="John Doe" required> </td></tr><br>
+		        <tr><td>Password <input type="text" placeholder="******" required> </td></tr><br>     
+            </table> 
+            <div id="btn">
+                <a href="">Submit</a>
+                </div>
+        </form>
+        
+                    
+                
+    </div>
+    <script src="/Src/theme.js"></script>
+    </body>
+</html>

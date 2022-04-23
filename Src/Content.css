@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.content
+{   
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 90%;
+      margin: auto;
+      padding: 20px 0;
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+}
+
+.content ul{
+    text-align: center;
+    left: 30%;
+    z-index: 1;
+}
+.content ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    z-index: 1;
+    
+}
+.content button{
+    text-decoration: none;
+    color: #ff1e62;
+    border-radius: 8px;
+    border-width: 0.1rem;
+    background-color: #ffffff !important;
+    padding: 7px 7px 7px 7px;
+    box-shadow: 3px 5px 5px #ff1e6280;
+
+}
+.content button:hover{
+    background-color: #000000 !important;
+    color: #baff75;
+}
+/*
+
+SET LIMIT
+
+*/
+
+.limit{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.lcontent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 10px 20px ;
+    box-shadow: 3px 5px 6px #ff1e62b3;
+    border: 0.25px solid #BFBFBF;
+    border-radius: 16px;
+    background-color: rgb(191, 191, 191);
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 40%;
+    top: 30%;
+}
+
+.limitform{
+    width: 100%;
+}
+.mwlimit{
+    color: #ff1e62;
+}
+.mwlimit td{
+    font-style: bold;
+    cursor: default;
+    color: #000000;
+   
+}
+/*
+
+ADD EXPENSE
+
+
+*/
+.add{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.addcontent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 10px 20px 10px;
+    box-shadow: 3px 5px 6px #ff1e62b3;
+    border: 0.25px solid #BFBFBF;
+    border-radius: 16px;
+    background-color: rgb(191, 191, 191, 0.7);
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 40%;
+    top: 20%;
+}
+
+.addform{
+    width: 100%;
+}
+.addexpense{
+    color: #ff1e62;
+}
+.addexpense td{
+    font-style: bold;
+    cursor: default;
+    color: #000000;
+   
+}
+
+input{
+    width: 100%;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+input:focus{
+    border: none;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PBMS | Homepage</title>
+        <!--Meta data-->
+        <meta charset="utf-8">
+        <meta name="description" content="Personal Budget Monitoring System">
+        <meta name="keywords" content="Budget management, budget, expense, household">
+        <meta name="author" content="Angshuman Sarma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Favicon-->    
+        <link rel="icon" type="icon" href="Assets\favicon.ico">
+        <!--Css-->
+        <link rel="stylesheet" href="Src\style.css">
+        <!--Script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="Src/login.js"></script>
+    </head>
+<body>
+ 
+    <!--Navigation-->
+    <div class="main">
+        <nav>
+        <img src="Assets\logo.png"  class="logo" alt="PBMS">
+        <ul>
+            <li><button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button></li>
+            <li><a href="mailto:angshu201.as@gmail.com">Contact Us</a></li>
+    
+        </ul>
+        <img src="Assets/moon.png" id="icon">
+        </nav>
+        <!--Content-->
+        <div class="info">
+            <h1>Personal <span>Budget</span><br> Monitoring <span>System</span></h1>
+            <p>A user friendly expense calculator for you and your concerned ones. </p>
+            <a href="">GET STARTED</a>
+        </div>
+        <!--Image left-->
+        <div class="img-box">
+            <img src="Assets/pattern.png" class="back-img">
+            <img src="Assets/graphicmain.png" class="main-img">
+        </div>
+    </div>
+        <!--Login popup-->
+        <div class="table" id="login">
+            <form class="box animate" action="authentication.php" onsubmit="return validation()" id="box" method="POST" autocomplete="off">  
+                <table>
+                    <h4>Login</h4>
+                    <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close">&times;</span>
+                    <tr><td>Username  <input type="text" name="usr" id="usr" placeholder="Enter your Username" required> </td></tr><br>
+                    <tr><td>Password <input type="password" name="pass" id="pass" placeholder="Enter your Password" required> </td></tr><br>     
+                </table>     
+                        <button id="btn" name="submit" id="submit">Submit</button> 
+            </form>
+                
+        </div>
+
+        <!--Script-->
+       <script src="Src/theme.js"></script>
+       <script src="Src/login.js"></script> 
+</body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>PBMS | Admin Portal</title>
+    <!--Favicon-->    
+    <link rel="icon" type="icon" href="Assets\favicon.ico">
+        <!--Css-->
+        <link rel="stylesheet" type="text/css" href="Src/style.css">
+        <link rel="stylesheet" href="Src/Content.css">
+    </head>
+<body>
+    <!--Navigation-->
+    <div class="main">
+        <nav>
+        <img src="Assets\logo.png" type="png" class="logo" alt="PBMS">
+        <ul>
+            <li><a href="index.html">Sign Out</a></li>
+            <li><a href="mailto:angshu201.as@gmail.com">Contact Us</a></li>
+    
+        </ul>
+        <img src="Assets\moon.png" id="icon">
+        </nav>
+
+        <!--Content-->
+        <div class="content" id="content">
+                <ul>
+                    <li><button id="btnset" onclick="document.getElementById('limit').style.display='block'" style="width:auto;">Set Expense Limit</button></li>
+                    <li><button id="btnadd" onclick="document.getElementById('add').style.display='block'" style="width:auto;">Add Expense</button></li>
+                    <li><button id="btnedit" onclick="window.location.href='edit.php'" style="width:auto;">Edit Expense</button></li>
+                    <li><button id="btntotal" onclick="window.location.href='total.php'" style.display="'block'" style="width:auto;">Show Total</button></li>
+                </ul> 
+        </div>
+        <!--Set Limit-->
+            <div class="limit" id="limit">
+                <div class="lcontent">
+                <form class="limitform" action="limit.php" onsubmit="return validation()" method="post" autocomplete="off">
+                    <h4>SET LIMIT</h4>
+                <span onclick="document.getElementById('limit').style.display='none'" class="close" title="Close">&times;</span>
+                <table class="mwlimit">
+                <tr><td>Set <strong>MONTHLY</strong> Limit <input type="number" name="monthly" id="monthly" placeholder="eg:30000"></input></td></tr><br>
+                <tr><td>Set <strong>WEEKLY</strong> Limit <input type="number"  name="weekly" id="weekly" placeholder="eg:5000"></td></tr><br>
+                </table>
+                <button id="btn">Set limit</button>
+                </form>
+                </div>
+            </div>
+        
+        <!--Add Expense-->
+        <div class="add" id="add">
+            <div class="addcontent">
+            <form class="addform" action="add.php" onsubmit="return validation()" method="post" autocomplete="off">
+                <h4>ADD EXPENSE</h4>
+            <span onclick="document.getElementById('add').style.display='none'" class="close" title="Close">&times;</span>
+            <table class="addexpense">
+            <tr><td>Date<input type="date" name="date" id="date" placeholder="Date/time"></input></td></tr><br>
+            <tr><td>Name of expense<input type="text" name="expname" id="expname" placeholder="eg:Bus Fare"></input></td></tr><br>
+            <tr><td>Type of expense<input type="text" name="exptype" id="exptype" placeholder="eg:Service/Goods"></input></td></tr><br>
+            <tr><td>Amount<input type="number" min="1" name="amt" id="amt" placeholder="eg:15"></td></tr><br>
+            </table>
+            <button id="btn">Add Expense</button>
+            </form>
+            </div>
+        </div>
+
+        <!--EDIT Expense-->
+        <div class="add" id="edit">
+            <div class="addcontent">
+           <!--<form class="addform" action="#" onsubmit="return validation()" method="post" autocomplete="off">
+                <h4>EDIT EXPENSE</h4>
+            <span onclick="document.getElementById('edit').style.display='none'" class="close" title="Close">&times;</span>
+            <table class="addexpense">
+            <tr><td>Date<input type="datetime-local" name="date" id="date" placeholder="Date/time"></input></td></tr><br>
+            <tr><td>Name of expense<input type="text" name="expname" id="expname" placeholder="eg:Bus Fare"></input></td></tr><br>
+            <tr><td>Type of expense<input type="text" name="exptype" id="exptype" placeholder="eg:Service/Goods"></input></td></tr><br>
+            <tr><td>Amount<input type="number" min="1" name="amt" id="amt" placeholder="eg:15"></td></tr><br>
+            </table>
+            <button id="btn">Submit</button>
+            </form>-->
+            
+            </div>
+        </div>
+
+        <!--Show total Expense-->
+        <div class="add" id="total">
+            <div class="addcontent">
+            <form class="addform" action="#" onsubmit="return validation()" method="post" autocomplete="off">
+                <h4>SHOW TOTAL</h4>
+            <span onclick="document.getElementById('total').style.display='none'" class="close" title="Close">&times;</span>
+            <table class="addexpense">
+            <tr><td>Name of expense<input type="" name="expname" id="expname" placeholder="eg:Bus Fare"></input></td></tr><br>
+            <tr><td>Type of expense<input type="text" name="exptype" id="exptype" placeholder="eg:Service/Goods"></input></td></tr><br>
+            <tr><td>Amount<input type="number" min="1" name="amt" id="amt" placeholder="eg:15"></td></tr><br>
+            </table>
+            <button id="btn">Show Total</button>
+            </form>
+            </div>
+        </div>
+        
+
+         <!--Image left-->
+         <div class="img-box">
+            <img src="Assets\pattern.png" class="back-img">
+            <img src="Assets\graphicmain.png" class="main-img">
+        </div>
+    </div>
+        
+
+    <!--Script-->
+    <script src="Src\theme.js"></script>
+    <script src="Src\event.js"></script>
+</body>
+</html>
